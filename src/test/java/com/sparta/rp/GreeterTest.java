@@ -40,4 +40,14 @@ public class GreeterTest {
 
 
     }
+    @Test
+    @DisplayName("Given time is 26, return Not Valid time")
+    void giveTimeIs26ReturnNotValidTime(){
+        int time = 26;
+        String expected = "Not Valid Time";
+        String answer = Greeter.getGreeting(time);
+        Assertions.assertEquals(expected, answer);
+
+
+    }
 }
